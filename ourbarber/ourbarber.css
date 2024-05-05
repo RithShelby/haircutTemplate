@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.nav .nav-item .nav-link:hover {
+  transition: ease-in-out 0.4s;
+  color: red !important;
+}
+
+.navbar-toggler {
+  color: red;
+  background: lightgrey !important;
+}
+
+.toggler-bar {
+  width: 28px;
+  height: 2px;
+  display: block;
+  transition: all 0.3s;
+  margin: 4px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/carousel-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 330px;
+}
+/* end navbar */
+
+/* our barber */
+.team-card {
+  transition: 0.5s ease;
+}
+
+.team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.7s ease-in;
+}
+
+.team-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 0;
+  width: 38px;
+  height: 38px;
+}
+
+.team-social a:hover {
+  background-color: red;
+  color: white !important;
+}
+
+.team-card:hover .team-social {
+  opacity: 1;
+}
+
+.team-bg {
+  width: 0;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  background-color: black;
+}
+
+.team-card:hover .team-bg {
+  width: 50%;
+}
+
+.bg-secondary {
+  background-color: #191c24 !important;
+}
+
+/* end our barber */
+
+/* footer */
+.gt-text {
+  color: #6c7293;
+}
+
+.ft-content span {
+  background-color: black !important;
+  height: 40px;
+  width: 40px;
+  font-size: 18px;
+  cursor: default;
+}
+
+.qk-text {
+  font-size: 15px;
+}
+
+.site-map li {
+  transition: transform 0.2s ease-in-out;
+}
+
+.site-map li span,
+.site-map li a {
+  transition: 0.3s;
+}
+
+.site-map li:hover span,
+.site-map li:hover a {
+  color: red;
+}
+
+.site-map li:hover {
+  transform: scale(1.01, 1.2) translate(1%, 6%);
+}
+
+.footer-input:focus {
+  outline: 3px solid rgb(140, 3, 3);
+}
+
+.signup-btn {
+  top: 13px;
+  right: 10px;
+  height: 40px;
+  width: 75px;
+  z-index: 1001;
+  border: none;
+  background-color: red;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  transition: 0.5s;
+}
+
+.signup-btn:hover {
+  background-color: rgb(201, 6, 6);
+}
+
+.ft-icon div {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+}
+
+.ft-icon div:hover {
+  background-color: black;
+}
+
+.bb {
+  transition: 0.3s;
+  border-bottom: 1px solid #6c7293;
+}
+
+.bb:hover {
+  color: red;
+}
+
+/* back to top */
+
+.btn-lg-square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  /* opacity: 0.9; */
+  background-color: red;
+}
+
+.back-to-top {
+  position: sticky;
+  bottom: 45px;
+  left: 93%;
+  z-index: 99;
+}
+.btn {
+  transition: 0.5s;
+}

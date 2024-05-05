@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haircut</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bd8abfd6ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="working.css" /> -->
+    <title>HairCut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fs-5" style="background-color: #191c24">
+      <div class="container-fluid py-3">
+        <div class="justify-content-start ms-4">
+          <i class="fa-solid fa-scissors fs-1 text-danger"></i>
+          <a
+            class="navbar-brand fs-1 text-secondary text-danger"
+            href="index.html"
+            >Hair Cut</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon p-3"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary me-3"
+                aria-current="page"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary me-3" href="AboutUs.html"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary me-3" href="Service.html"
+                >SERVICE</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary me-3"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PAGES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item text-secondary me-3"
+                    href="./pricing-plan/pricing-plan.html"
+                    >Pricing plan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-secondary me-3"
+                    href="./ourbarber/ourbarber.html"
+                    >Our Barber</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-secondary me-3"
+                    href="./work-hour/workhour.html"
+                    >Working Hours</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-secondary me-3"
+                    href="./testimonial/testimonial.html"
+                    >Testimonial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-secondary me-3"
+                    href="./404-page/404.html"
+                    >404 Page</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary me-3"
+                href="Contact.html"
+                style="color: red !important"
+                >COTACT</a
+              >
+            </li>
+            <button class="btn btn-danger" type="submit">
+              Appointment<i
+                class="ms-3 fa-solid fa-arrow-right"
+                style="color: #000000"
+              ></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Form and Map-->
+    <section data-aos="fade-down" data-aos-duration="3000">
+      <div class="position-relative">
+        <img
+          style="height: 400px"
+          class="w-100"
+          src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/carousel-1.jpg"
+          alt=""
+        />
+        <div
+          class="position-absolute"
+          style="
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 70%;
+            height: 400px;
+          "
+        ></div>
+        <div
+          class="container text-center py-5 position-absolute"
+          style="top: 0; left: 0; right: 0; bottom: 0"
+        >
+          <h1 class="display-1 text-uppercase text-white">contact</h1>
+          <nav class="justify-content-center text-uppercase breadcrumb">
+            <ol class="breadcrumb fs-5">
+              <li class="breadcrumb-item text-white">
+                <a class="text-white" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-white" href="./pricing-plan/pricing-plan.html"
+                  >Pages</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a class="text-danger" href="Contact.html">Contact</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="container my-5" style="background-color: #191c24">
+        <div class="row">
+          <div class="col-md-6 my-5 px-5 text-white" data-aos="fade-right">
+            <p
+              class="text-center text-uppercase bg-black w-25 py-2 text-danger"
+            >
+              Contact US
+            </p>
+            <h1 class="display-5">HAVE ANY QUERY? PLEASE CONTACT US!</h1>
+            <p class="fs-5 mt-4 lh-base text-secondary">
+              The contact form is currently inactive. Get a functional and
+              working contact form with Ajax & PHP in a few minutes. Just copy
+              and paste the files, add a little code and you're done.
+              <a href="#" class="text-danger"> Download Now.</a>
+            </p>
+            <div class="row my-1">
+              <div class="col-md text-end">
+                <div class="mb-3 d-flex text-white">
+                  <input
+                    style="height: 70px"
+                    type="email"
+                    class="form-control me-4 border border-secondary border-3 text-bg-secondary"
+                    id="exampleFormControlInput1"
+                    placeholder="Yourname... "
+                  />
+                  <input
+                    style="height: 70px"
+                    type="name"
+                    class="form-control border border-secondary border-3 text-bg-secondary"
+                    id="exampleFormControlInput1"
+                    placeholder="YourEmail..."
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    style="height: 70px"
+                    type="email"
+                    class="form-control me-4 border border-secondary border-3 text-bg-secondary"
+                    id="exampleFormControlInput1"
+                    placeholder="Subject..."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control border border-secondary border-3 text-bg-secondary"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    placeholder="Message..."
+                  ></textarea>
+                </div>
+                <div class="">
+                  <button
+                    type="submit"
+                    class="btn w-100 text-uppercase bg-danger"
+                    style="height: 100px"
+                  >
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Map-->
+          <div class="col-md-6" data-aos="fade-left">
+            <iframe
+              class="m-auto"
+              id="iframeid"
+              style="border: 0px; width: 100%; height: 100%"
+              src="https://www.google.com/maps/embed?api=1&origin=Space+Needle+Seattle+WA&destination=Pike+Place+Market+Seattle+WA&travelmode=bicycling"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Footer -->
+      <footer style="background-color: #191c24; padding-top: 100px">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-4">
+              <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+                Get in touch
+              </h5>
+
+              <ul class="list-unstyled mb-0 ft-content">
+                <li class="d-flex align-items-center mb-2">
+                  <span
+                    class="btn bg-dark me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-location-dot" style="color: red"></i>
+                  </span>
+                  <div class="gt-text">123 Street, New York, USA</div>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span
+                    class="btn bg-dark me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-phone" style="color: red"></i>
+                  </span>
+                  <div class="gt-text">+855 988 86847</div>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span
+                    class="btn me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="fa-solid fa-envelope-open" style="color: red"></i>
+                  </span>
+                  <div class="gt-text">123 Street, New York, USA</div>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4">
+              <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+                QUICK LINKS
+              </h5>
+              <ul class="list-unstyled site-map">
+                <li class="mb-2">
+                  <div class="gt-text qk-text">
+                    <span class="me-1" style="font-size: 13px">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <a href="#!" class="gt-text">About Us</a>
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <div class="gt-text qk-text">
+                    <span class="me-1" style="font-size: 13px">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <a href="#!" class="gt-text">Contact Us</a>
+                  </div>
+                </li>
+
+                <li class="mb-2">
+                  <div class="gt-text qk-text">
+                    <span class="me-1" style="font-size: 13px">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <a href="#!" class="gt-text">Our Survices</a>
+                  </div>
+                </li>
+
+                <li class="mb-2">
+                  <div class="gt-text qk-text">
+                    <span class="me-1" style="font-size: 13px">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <a href="#!" class="gt-text">Terms & Condition</a>
+                  </div>
+                </li>
+
+                <li class="mb-2">
+                  <div class="gt-text qk-text">
+                    <span class="me-1" style="font-size: 13px">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <a href="#!" class="gt-text">Support</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4">
+              <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+                NEWSLETTER
+              </h5>
+              <div class="position-relative mb-4">
+                <div class="input-group mb-3 position-relative">
+                  <input
+                    type="text"
+                    class="form-control footer-input"
+                    placeholder="Your Email"
+                    style="padding: 20px; border-radius: 0"
+                    ;
+                    width="300px"
+                  />
+                </div>
+                <button class="position-absolute signup-btn" style="z-index: 0">
+                  SignUp
+                </button>
+              </div>
+
+              <div class="d-flex flex-row ft-icon">
+                <div
+                  class="btn fs-6 me-2 d-flex justify-content-center align-items-center"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-twitter" style="color: red"></i
+                  ></a>
+                </div>
+                <div
+                  class="btn fs-6 me-2 d-flex justify-content-center align-items-center"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-facebook-f" style="color: red"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="btn fs-6 me-2 d-flex justify-content-center align-items-center"
+                >
+                  <a href=""
+                    ><i class="fa-brands fa-youtube" style="color: red"></i>
+                  </a>
+                </div>
+                <div
+                  class="btn fs-6 me-2 d-flex justify-content-center align-items-center"
+                >
+                  <a href="https://www.linkedin.com/in/chhun-natharith/">
+                    <i class="fa-brands fa-linkedin-in" style="color: red"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Grid column-->
+          </div>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="container pt-4">
+          <div
+            class="row"
+            style="background-color: black; padding: 30px 0 50px 0"
+          >
+            <div class="col-md-6 text-center text-md-start mb-4">
+              <div class="gt-text">
+                © <a href="#" class="gt-text bb">Your site name</a>, All Right
+                Reserved.
+              </div>
+            </div>
+            <div
+              class="col-md-6 text-center text-md-end"
+              style="line-height: 0.8"
+            >
+              <div class="gt-text">
+                Designed By <a href="" class="gt-text bb">HTML Codex</a>
+              </div>
+              <br />
+              <div class="gt-text">
+                Distributed By <a href="" class="gt-text bb">ThemeWagon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </body>
+  <!-- back to top -->
+  <a href="#" class="btn btn-danger btn-lg-square back-to-top">
+    <i class="text-white fa-solid fa-arrow-up"></i
+  ></a>
+  <script src="./404-page/404.js"></script>
+  <!-- Kimheng -->
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

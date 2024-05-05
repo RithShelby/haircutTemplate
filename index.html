@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bd8abfd6ad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="working.css" /> -->
+  <title>HairCut</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Header Rith-->
+
+  <nav class="navbar navbar-expand-lg fs-5" style="background-color: #191c24">
+    <div class="container-fluid py-3">
+      <div class="justify-content-start ms-4">
+        <i class="fa-solid fa-scissors fs-1 text-danger"></i>
+        <a class="navbar-brand fs-1 text-secondary text-danger" href="#">Hair Cut</a>
+      </div>
+      <i class="fa-solid fa-bars-progress navbar-toggler text-danger fs-1" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation"></i>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary me-3" aria-current="page" href="index.html"
+              style="color: red !important">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary me-3" href="AboutUs.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary me-3" href="Service.html">SERVICE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary me-3" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PAGES
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-secondary me-3" href="./pricing-plan/pricing-plan.html">Pricing plan</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-secondary me-3" href="./ourbarber/ourbarber.html">Our Barber</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-secondary me-3" href="./work-hour/workhour.html">Working Hours</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-secondary me-3" href="./testimonial/testimonial.html">Testimonial</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-secondary me-3" href="./404-page/404.html">404 Page</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary me-3" href="Contact.html">COTACT</a>
+          </li>
+          <button class="btn btn-danger" type="submit">
+            Appointment<i class="ms-3 fa-solid fa-arrow-right" style="color: #000000"></i>
+          </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Lyhuoy-->
+  <!--Bannar-->
+  <section id="carouselExample" class="carousel slide" data-aos="fade-up" data-aos-duration="3000">
+    <div class="carousel-inner fadeIn">
+      <div class="carousel-item active">
+        <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/carousel-1.jpg"
+          class="d-block w-100" alt="" />
+        <div class="carousel-caption d-flex align-items-center justify-content-center text-start" style="
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.85);
+            ">
+          <div class="mx-sm-5 px-5" style="max-width: 900px">
+            <h1 class="display-2 mb-4">WE WILL KEEP YOU AN AWESOME LOOK</h1>
+            <h4 class="mb-4">
+              <i class="fa-solid fa-location-dot me-2 fs-3" style="color: #ff052b"></i>
+              123 STREET, NEW YORK, USA
+            </h4>
+            <h4>
+              <i class="fa-solid fa-phone me-2 fs-3" style="color: #ff0000"></i>
+              +012 345 67890
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/carousel-2.jpg"
+          class="d-block w-100" alt="" />
+        <div class="carousel-caption d-flex align-items-center justify-content-center text-start" style="
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.85);
+            ">
+          <div class="mx-sm-5 px-5" style="max-width: 900px">
+            <h1 class="display-2 mb-4">LUXURY HAIRCUT AT AFFORDABLE PRICE</h1>
+            <h4 class="mb-4">
+              <i class="fa-solid fa-location-dot me-2 fs-3" style="color: #ff052b"></i>
+              123 STREET, NEW YORK, USA
+            </h4>
+            <h4>
+              <i class="fa-solid fa-phone me-2 fs-3" style="color: #ff0000"></i>
+              +012 345 67890
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <!--About Us-->
+  <section>
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-6 mt-5" data-aos="fade-right">
+          <div class="d-flex justify-content-center flex-column px-3">
+            <img class="w-75 align-self-end"
+              src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/about.jpg"
+              alt="about-image " />
+            <div class="w-50 bg-secondary d-flex flex-column justify-content-center align-items-center py-5"
+              style="margin-top: -25%">
+              <h1 class="text-danger text-uppercase">25 years</h1>
+              <h2 class="text-uppercase text-white fs-3">Experience</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5 px-3" data-aos="fade-left">
+          <div>
+            <p class="bg-secondary text-center w-25 p-3 text-danger fs-5">
+              About Us
+            </p>
+            <h1 class="fw-bold text-light">
+              MORE THAN JUST A HAIRCUT. LEARN MORE ABOUT US!
+            </h1>
+            <p class="text-secondary fs-5">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+              Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+              sed stet lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <p class="text-secondary fs-5">
+              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
+              stet est diam rebum amet diam ipsum. Clita clita labore, dolor
+              duo nonumy clita sit at, sed sit sanctus dolor eos.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="text-white">SINCE 1990</h2>
+              <p class="fs-5 text-secondary">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <h2 class="text-white">1000+ CLIENTS</h2>
+              <p class="fs-5 text-secondary">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--What-We-Provide-->
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 mb-4" data-aos="zoom-in-up">
+          <div class="text-center align-items-center d-flex flex-column">
+            <p class="bg-secondary text-center p-3 text-danger fs-5">
+              Services
+            </p>
+            <h4 class="fs-1 fw-bold text-light mt-3">WHAT WE PROVIDE</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/haircut.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-3 fw-bold text-light">HAIRCUT</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/beard-trim.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-4 fw-bold text-light">BEARD TRIM</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/mans-shave.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-4 fw-bold text-light">MANSSHAVE</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/hair-dyeing.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-4 fw-bold text-light">HAIRDYEING</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/mustache.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-4 fw-bold text-light">MUSTACHE</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-3 pe-3 pb-2" data-aos="zoom-in-up">
+          <div class="haircut-container ps-0 pt-5 pb-5 pe-5 bg-secondary position-relative">
+            <div class="d-flex justify-content-center align-item-center">
+              <div class="haircut-content btn btn-square d-flex align-item-center justify-content-center">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/stacking.png"
+                  alt="" />
+              </div>
+              <div class="ps-4">
+                <h4 class="fs-4 fw-bold text-light">STACKING</h4>
+                <p style="color: #6c7293">
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam.
+                </p>
+                <span class="text-danger fw-bold">FROM $15</span>
+              </div>
+            </div>
+            <div>
+              <span class="box-content position-absolute d-flex flex-column justify-content-end">
+                <div class="box-popup btn btn-square bg-light">
+                  <i class="fa-solid fa-plus" style="color: red"></i>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End lyhouy-->
+
+  <!--Rith -->
+  <section style="margin: 50px 20px">
+    <div class="container my-5" style="background-color: #191c24">
+      <div class="row">
+        <div class="col-md-6 p-5 text-white" data-aos="fade-right">
+          <div class="working-hour fs-6 text-danger bg-black w-25 text-center py-2 mb-3">
+            Price & Plan
+          </div>
+          <h1 class="working-title fw-bold fs-1 text-white mb-5">
+            CHECK OUT OUR BARBER SERVICES AND PRICES
+          </h1>
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>HAIRCUT</span>
+            <span class="text-danger">$29.00</span>
+          </div>
+          <hr />
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>BEARD TRIM</span>
+            <span class="text-danger">$35.00</span>
+          </div>
+          <hr />
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>MANS SHAVE</span>
+            <span class="text-danger">$23.00</span>
+          </div>
+          <hr />
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>HAIR DYEING</span>
+            <span class="text-danger">$19.00</span>
+          </div>
+          <hr />
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>MUSTACHE</span>
+            <span class="text-danger">$15.00</span>
+          </div>
+          <hr />
+          <div class="day-work fw-bold d-flex justify-content-between">
+            <span>STACKING </span>
+            <span class="text-danger">$39.00</span>
+          </div>
+          <hr />
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <img class="w-100 h-100"
+            src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/price.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Rith-->
+  <!--Our Barber-->
+  <section class="mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <div class="text-center">
+            <span class="text-center p-3 text-danger fs-5" style="padding: 5px 22px; background-color: #191c24">Our
+              Barber</span>
+            <h4 class="fs-1 fw-bold text-light mt-3">MEET OUR BARBER</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row p-2">
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="400">
+          <div class="team-item">
+            <div class="position-relative team-card">
+              <img class="w-100"
+                src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/team-1.jpg"
+                alt="image" />
+              <div class="team-bg position-absolute h-100 top-0"></div>
+              <div class="team-bg end-0 position-absolute h-100 top-0 right-0"></div>
+              <div class="team-social">
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 text-center bg-secondary text-light">
+            <h5 class="text-uppercase fw-bold fs-5">barber name</h5>
+            <span class="text-danger">Designation</span>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="700">
+          <div class="team-item">
+            <div class="position-relative team-card">
+              <img class="w-100"
+                src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/team-2.jpg"
+                alt="image" />
+              <div class="team-bg position-absolute h-100 top-0"></div>
+              <div class="team-bg end-0 position-absolute h-100 top-0 right-0"></div>
+              <div class="team-social">
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 text-center bg-secondary text-light">
+            <h5 class="text-uppercase fw-bold fs-5">barber name</h5>
+            <span class="text-danger">Designation</span>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="team-item">
+            <div class="position-relative team-card">
+              <img class="w-100"
+                src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/team-3.jpg"
+                alt="image" />
+              <div class="team-bg position-absolute h-100 top-0"></div>
+              <div class="team-bg end-0 position-absolute h-100 top-0 right-0"></div>
+              <div class="team-social">
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 text-center bg-secondary text-light">
+            <h5 class="text-uppercase fw-bold fs-5">barber name</h5>
+            <span class="text-danger">Designation</span>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1200">
+          <div class="team-item">
+            <div class="position-relative team-card">
+              <img class="w-100"
+                src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/team-4.jpg"
+                alt="image" />
+              <div class="team-bg position-absolute h-100 top-0"></div>
+              <div class="team-bg end-0 position-absolute h-100 top-0 right-0"></div>
+              <div class="team-social">
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-square me-1 text-danger">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 text-center bg-secondary text-light">
+            <h5 class="text-uppercase fw-bold fs-5">barber name</h5>
+            <span class="text-danger">Designation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Kimheng -->
+  <!-- working hour -->
+  <section style="margin: 50px 20px">
+    <div class="container" style="background-color: #191c24">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+          <img class="w-100" src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/open.jpg"
+            alt="" />
+        </div>
+        <div class="col-md-6" style="padding: 50px" data-aos="fade-left" data-aos-duration="1000">
+          <div class="working-hour fs-6 text-center">Working Hours</div>
+          <h1 class="working-title fw-bold mb-4" style="color: white; line-height: 1.1">
+            PROFESSIONAL BARBERS ARE WAITING FOR YOU
+          </h1>
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>Monday</span>
+              <span>09 AM - 09 PM</span>
+            </div>
+            <div class="day-line"></div>
+          </div>
+
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>tuesday</span>
+              <span>09 AM - 09 PM</span>
+            </div>
+            <div class="day-line"></div>
+          </div>
+
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>wednesday</span>
+              <span>09 AM - 09 PM</span>
+            </div>
+            <div class="day-line"></div>
+          </div>
+
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>thursday</span>
+              <span>09 AM - 09 PM</span>
+            </div>
+            <div class="day-line"></div>
+          </div>
+
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>Friday</span>
+              <span>09 AM - 09 PM</span>
+            </div>
+            <div class="day-line"></div>
+          </div>
+          <div>
+            <div class="day-work fw-bold d-flex justify-content-between">
+              <span>sat / sun</span>
+              <span class="text-danger">CLOSED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kimheng -->
+
+  <!-- Kimheng -->
+
+  <!-- slideing heng-->
+  <section style="background-color: black">
+    <div class="container" style="padding: 70px 0">
+      <div data-aos="fade-up" data-aos-duration="400">
+        <div class="row active">
+          <div class="testimonial mb-4 text-center">
+            <span class="bg-secondary text-danger p-3 fs-5">Testimonial</span>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div>
+            <h2 class="fs-1 fw-bold text-light text-center">
+              WHAT OUR CLIENTS SAY!
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 position-relative sliding" data-aos="fade-up" data-aos-duration="1000">
+          <div class="text-center text-light active each-item" style="padding: 0 50px">
+            <div class="mb-3">
+              <h3>CLIENTS NAME</h3>
+              <span class="text-danger fs-6">Profession</span>
+            </div>
+            <div class="fs-5" style="color: #6c7293; line-height: 1.4">
+              <p style="padding: 10px 20px">
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+            </div>
+          </div>
+          <div class="text-center text-light each-item" style="padding: 0 50px">
+            <div class="mb-3">
+              <h3>CLIENTS NAME</h3>
+              <span class="text-danger fs-6">Profession</span>
+            </div>
+            <div class="fs-5" style="color: #6c7293; line-height: 1.4">
+              <p style="padding: 10px 20px">
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+            </div>
+          </div>
+          <div class="text-center text-light each-item" style="padding: 0 50px">
+            <div class="mb-3">
+              <h3>CLIENTS NAME</h3>
+              <span class="text-danger fs-6">Profession</span>
+            </div>
+            <div class="fs-5" style="color: #6c7293; line-height: 1.4">
+              <p style="padding: 10px 20px">
+                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
+                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
+                clita erat magna elitr erat sit sit erat at rebum justo sea
+                clita.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding: 15px 50px" data-aos="fade-up" data-aos-duration="1500">
+          <div class="col-md-12 text-center">
+            <div class="d-flex justify-content-center mt-4 slide-container">
+              <div class="image-dots active" attr="0">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/testimonial-1.jpg"
+                  alt="haircut" />
+              </div>
+              <div class="image-dots" attr="1">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/testimonial-2.jpg"
+                  alt="haircut" />
+              </div>
+              <div class="image-dots" attr="2">
+                <img src="https://kiloit-learning.s3.ap-southeast-1.amazonaws.com/sample/haircut/img/testimonial-3.jpg"
+                  alt="haircut" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of sliding -->
+
+  <!-- footer -->
+
+  <section>
+    <!-- Footer -->
+    <footer style="background-color: #191c24; padding-top: 100px">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-4">
+            <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+              Get in touch
+            </h5>
+
+            <ul class="list-unstyled mb-0 ft-content">
+              <li class="d-flex align-items-center mb-2">
+                <span class="btn bg-dark me-3 d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-location-dot" style="color: red"></i>
+                </span>
+                <div class="gt-text">123 Street, New York, USA</div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <span class="btn bg-dark me-3 d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-phone" style="color: red"></i>
+                </span>
+                <div class="gt-text">+855 988 86847</div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <span class="btn me-3 d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-envelope-open" style="color: red"></i>
+                </span>
+                <div class="gt-text">123 Street, New York, USA</div>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4">
+            <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+              QUICK LINKS
+            </h5>
+            <ul class="list-unstyled site-map">
+              <li class="mb-2">
+                <div class="gt-text qk-text">
+                  <span class="me-1" style="font-size: 13px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <a href="#!" class="gt-text">About Us</a>
+                </div>
+              </li>
+              <li class="mb-2">
+                <div class="gt-text qk-text">
+                  <span class="me-1" style="font-size: 13px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <a href="#!" class="gt-text">Contact Us</a>
+                </div>
+              </li>
+
+              <li class="mb-2">
+                <div class="gt-text qk-text">
+                  <span class="me-1" style="font-size: 13px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <a href="#!" class="gt-text">Our Survices</a>
+                </div>
+              </li>
+
+              <li class="mb-2">
+                <div class="gt-text qk-text">
+                  <span class="me-1" style="font-size: 13px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <a href="#!" class="gt-text">Terms & Condition</a>
+                </div>
+              </li>
+
+              <li class="mb-2">
+                <div class="gt-text qk-text">
+                  <span class="me-1" style="font-size: 13px">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <a href="#!" class="gt-text">Support</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-4">
+            <h5 class="text-uppercase fs-4 fw-bold text-light mb-4">
+              NEWSLETTER
+            </h5>
+            <div class="position-relative mb-4">
+              <div class="input-group mb-3 position-relative">
+                <input type="text" class="form-control footer-input" placeholder="Your Email"
+                  style="padding: 20px; border-radius: 0" ; width="300px" />
+              </div>
+              <button class="position-absolute signup-btn" style="z-index: 0">
+                SignUp
+              </button>
+            </div>
+
+            <div class="d-flex flex-row ft-icon">
+              <div class="btn fs-6 me-2 d-flex justify-content-center align-items-center">
+                <a href=""><i class="fa-brands fa-twitter" style="color: red"></i></a>
+              </div>
+              <div class="btn fs-6 me-2 d-flex justify-content-center align-items-center">
+                <a href=""><i class="fa-brands fa-facebook-f" style="color: red"></i></a>
+              </div>
+
+              <div class="btn fs-6 me-2 d-flex justify-content-center align-items-center">
+                <a href=""><i class="fa-brands fa-youtube" style="color: red"></i>
+                </a>
+              </div>
+              <div class="btn fs-6 me-2 d-flex justify-content-center align-items-center">
+                <a href="https://www.linkedin.com/in/chhun-natharith/">
+                  <i class="fa-brands fa-linkedin-in" style="color: red"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="container pt-4">
+        <div class="row" style="background-color: black; padding: 30px 0 50px 0">
+          <div class="col-md-6 text-center text-md-start mb-4">
+            <div class="gt-text">
+              © <a href="#" class="gt-text bb">Your site name</a>, All Right
+              Reserved.
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-end" style="line-height: 0.8">
+            <div class="gt-text">
+              Designed By <a href="" class="gt-text bb">HTML Codex</a>
+            </div>
+            <br />
+            <div class="gt-text">
+              Distributed By <a href="" class="gt-text bb">ThemeWagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+  <!-- back to top -->
+  <a href="#" class="btn btn-danger btn-lg-square back-to-top">
+    <i class="text-white fa-solid fa-arrow-up"></i></a>
+  <script src="./404-page/404.js"></script>
+  <!-- Kimheng -->
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
